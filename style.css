@@ -1,5 +1,5 @@
 /* ==========================================================================
-   PERSONAL PORTFOLIO STYLESHEET
+   PERSONAL PORTFOLIO STYLESHEET (Option B - Project-First, Minimal Bio)
    
    Design Specifications:
    - Website Style: Modern & Professional
@@ -11,10 +11,12 @@
        • Secondary Accent: #0284c7 (Sky Blue)
        • Text Primary: #0f172a (Deep Slate / 900)
        • Text Secondary: #475569 (Slate / 600)
+       • Text Muted: #64748b (Slate / 500)
        • Borders & Dividers: #e2e8f0 (Slate / 200)
    - Website Theme / Feeling: Modern, polished, approachable, and trustworthy
-     — engineered to showcase high craftsmanship, structural precision,
-     and effortless readability for clients, recruiters, and collaborators.
+     — project-first focus putting development work and live applications at
+     the forefront, followed by a crisp concise bio, technical proficiencies,
+     and a personal creative showcase.
    - Font Style: Modern & Clean System Sans-Serif Stack
      (-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif)
    ========================================================================== */
@@ -55,6 +57,7 @@
   --shadow-sm: 0 1px 2px 0 rgba(15, 23, 42, 0.05);
   --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.07), 0 2px 4px -2px rgba(15, 23, 42, 0.05);
   --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.04);
+  --shadow-xl: 0 20px 25px -5px rgba(15, 23, 42, 0.1), 0 8px 10px -6px rgba(15, 23, 42, 0.05);
   
   /* Transitions */
   --transition-fast: 150ms ease;
@@ -91,7 +94,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2.75rem;
+  font-size: 2.5rem;
   letter-spacing: -0.025em;
 }
 
@@ -138,7 +141,7 @@ img, video {
   padding-right: 1.5rem;
 }
 
-/* Section Header */
+/* Section Headers */
 .section-header {
   text-align: center;
   margin-bottom: 3rem;
@@ -156,7 +159,7 @@ img, video {
 .section-description {
   font-size: 1.125rem;
   color: var(--text-secondary);
-  max-width: 600px;
+  max-width: 620px;
   margin: 0 auto;
 }
 
@@ -173,7 +176,7 @@ img, video {
 }
 
 /* ==========================================================================
-   Header & Navigation
+   1. Header & Navigation
    ========================================================================== */
 #site-header {
   position: sticky;
@@ -181,7 +184,7 @@ img, video {
   left: 0;
   right: 0;
   z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.92);
+  background-color: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border-color);
@@ -248,102 +251,6 @@ img, video {
 }
 
 /* ==========================================================================
-   Hero Section
-   ========================================================================== */
-#hero {
-  padding: 6rem 0 5rem;
-  overflow: hidden;
-}
-
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  align-items: center;
-  gap: 3.5rem;
-}
-
-.hero-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.hero-greeting {
-  font-size: 1.125rem;
-  font-weight: 600;
-  color: var(--primary);
-  margin-bottom: 0.5rem;
-}
-
-.hero-title {
-  margin-bottom: 1.25rem;
-}
-
-.hero-intro {
-  font-size: 1.25rem;
-  line-height: 1.6;
-  color: var(--text-secondary);
-  margin-bottom: 2rem;
-  max-width: 580px;
-}
-
-.hero-actions {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-/* Profile Image Placeholder */
-.hero-image-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-.profile-placeholder-card {
-  width: 100%;
-  max-width: 340px;
-  aspect-ratio: 1 / 1;
-  background-color: var(--bg-surface);
-  border: 2px dashed var(--border-color);
-  border-radius: var(--radius-lg);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  text-align: center;
-  box-shadow: var(--shadow-md);
-  position: relative;
-  transition: border-color var(--transition-normal), box-shadow var(--transition-normal);
-}
-
-.profile-placeholder-card:hover {
-  border-color: var(--primary);
-  box-shadow: var(--shadow-lg);
-}
-
-.placeholder-icon {
-  width: 64px;
-  height: 64px;
-  color: var(--primary);
-  margin-bottom: 1rem;
-  opacity: 0.85;
-}
-
-.placeholder-label {
-  font-weight: 700;
-  font-size: 1rem;
-  color: var(--text-primary);
-  margin-bottom: 0.5rem;
-}
-
-.placeholder-help {
-  font-size: 0.8125rem;
-  color: var(--text-muted);
-  line-height: 1.4;
-}
-
-/* ==========================================================================
    Buttons
    ========================================================================== */
 .btn {
@@ -395,51 +302,126 @@ img, video {
 }
 
 /* ==========================================================================
-   About Section
+   2. Featured Project Banner (Large Highlighted Project)
    ========================================================================== */
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
+#featured-banner {
+  padding: 4.5rem 0 4rem;
 }
 
-.about-main-card {
+.featured-banner-intro {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.featured-project-card {
   background-color: var(--bg-surface);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
-  padding: 2.5rem;
-  box-shadow: var(--shadow-sm);
-}
-
-.about-subgrid {
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-  margin-top: 1.5rem;
+  grid-template-columns: 1.15fr 1fr;
+  transition: border-color var(--transition-normal), box-shadow var(--transition-normal), transform var(--transition-normal);
 }
 
-.info-card {
+.featured-project-card:hover {
+  border-color: var(--primary-border);
+  box-shadow: var(--shadow-xl);
+}
+
+.featured-image-container {
   background-color: var(--bg-muted);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-md);
-  padding: 1.75rem;
-}
-
-.info-card-header {
+  border-right: 1px solid var(--border-color);
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 0.75rem;
-  margin-bottom: 0.75rem;
+  justify-content: center;
+  padding: 3rem 2rem;
+  text-align: center;
+  min-height: 400px;
+  position: relative;
 }
 
-.info-card-icon {
-  width: 24px;
-  height: 24px;
+.featured-image-icon {
+  width: 64px;
+  height: 64px;
   color: var(--primary);
+  margin-bottom: 1rem;
+  opacity: 0.85;
+}
+
+.featured-image-label {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.featured-image-help {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+.featured-body {
+  padding: 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.featured-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--primary);
+  background-color: var(--primary-light);
+  padding: 0.35rem 0.875rem;
+  border-radius: var(--radius-full);
+  margin-bottom: 1.25rem;
+  width: fit-content;
+}
+
+.featured-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.featured-desc {
+  font-size: 1.125rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.featured-tech {
+  margin-bottom: 2rem;
+  padding: 0.875rem 1.25rem;
+  background-color: var(--bg-muted);
+  border-radius: var(--radius-md);
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  border-left: 4px solid var(--primary);
+}
+
+.featured-tech strong {
+  color: var(--text-primary);
+}
+
+.featured-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 /* ==========================================================================
-   Projects Section (10 Cards Grid)
+   3. Projects Section (10 Empty Cards Grid)
    ========================================================================== */
 .projects-grid {
   display: grid;
@@ -535,7 +517,102 @@ img, video {
 }
 
 /* ==========================================================================
-   Skills Section (10 Tags Grid)
+   4. About / Minimal Bio (Placed After Projects)
+   ========================================================================== */
+.about-minimal-grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.profile-placeholder-card {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: var(--bg-surface);
+  border: 2px dashed var(--border-color);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: border-color var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.profile-placeholder-card:hover {
+  border-color: var(--primary);
+  box-shadow: var(--shadow-md);
+}
+
+.placeholder-icon {
+  width: 64px;
+  height: 64px;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  opacity: 0.85;
+}
+
+.placeholder-label {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.placeholder-help {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.about-bio-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.about-bio-intro {
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.about-subgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.info-card {
+  background-color: var(--bg-muted);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
+}
+
+.info-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.info-card-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--primary);
+}
+
+/* ==========================================================================
+   5. Skills Section (10 Tags Grid)
    ========================================================================== */
 .skills-grid {
   display: grid;
@@ -581,7 +658,7 @@ img, video {
 }
 
 /* ==========================================================================
-   Fun Facts & Creative About Page Section
+   6. Fun Facts & Creative Page Section
    ========================================================================== */
 .fun-facts-container {
   display: flex;
@@ -707,7 +784,7 @@ img, video {
 }
 
 /* ==========================================================================
-   Contact Section
+   7. Contact Section
    ========================================================================== */
 .contact-wrapper {
   max-width: 700px;
@@ -807,24 +884,30 @@ img, video {
 /* ==========================================================================
    Responsive Breakpoints
    ========================================================================== */
-@media (max-width: 900px) {
-  .hero-grid {
+@media (max-width: 960px) {
+  .featured-project-card {
     grid-template-columns: 1fr;
-    text-align: center;
-    gap: 2.5rem;
   }
 
-  .hero-content {
-    align-items: center;
+  .featured-image-container {
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+    min-height: 280px;
+    padding: 2.5rem 1.5rem;
   }
 
-  .hero-intro {
-    margin-left: auto;
-    margin-right: auto;
+  .featured-body {
+    padding: 2rem 1.5rem;
   }
 
-  .hero-actions {
-    justify-content: center;
+  .about-minimal-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .profile-placeholder-card {
+    max-width: 320px;
+    margin: 0 auto;
   }
 
   .creative-details-grid {
@@ -857,11 +940,15 @@ img, video {
   }
 
   h1 {
-    font-size: 2.25rem;
+    font-size: 2.125rem;
   }
 
   h2 {
     font-size: 1.75rem;
+  }
+
+  .featured-title {
+    font-size: 1.625rem;
   }
 
   .section {
@@ -880,8 +967,12 @@ img, video {
     padding: 2rem 1.5rem;
   }
 
-  .about-main-card,
+  .about-bio-card,
   .media-section-card {
     padding: 1.5rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
   }
 }

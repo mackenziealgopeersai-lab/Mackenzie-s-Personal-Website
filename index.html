@@ -19,13 +19,13 @@
     <header id="site-header">
       <div class="container">
         <nav id="navbar" class="nav-container" aria-label="Main Navigation">
-          <a href="#home" id="nav-logo" class="logo">
+          <a href="#featured" id="nav-logo" class="logo">
             <span class="logo-accent">&lt;/&gt;</span> [Your Name]
           </a>
           <ul class="nav-links">
-            <li><a href="#home" id="nav-home" class="nav-link">Home</a></li>
-            <li><a href="#about" id="nav-about" class="nav-link">About</a></li>
+            <li><a href="#featured" id="nav-featured" class="nav-link">Featured</a></li>
             <li><a href="#projects" id="nav-projects" class="nav-link">Projects</a></li>
+            <li><a href="#about" id="nav-about" class="nav-link">About</a></li>
             <li><a href="#skills" id="nav-skills" class="nav-link">Skills</a></li>
             <li><a href="#fun-facts" id="nav-fun-facts" class="nav-link">Fun Facts</a></li>
             <li><a href="#contact" id="nav-contact" class="nav-link">Contact</a></li>
@@ -36,113 +36,77 @@
 
     <main>
       <!-- =======================================================================
-           2. Hero Section
+           2. Featured Project Banner (One Large Highlighted Project)
            ======================================================================= -->
-      <section id="home" class="section">
+      <section id="featured" class="section featured-section">
         <div class="container">
-          <div class="hero-grid">
-            <div class="hero-content">
-              <span class="hero-greeting">Hello, I'm</span>
-              <h1 id="hero-name" class="hero-title">[Your Name]</h1>
-              <p id="hero-intro" class="hero-intro">[Your Short Introduction]</p>
-              <div class="hero-actions">
-                <a href="#projects" id="btn-view-projects" class="btn btn-primary">View My Projects</a>
-                <a href="#contact" id="btn-hero-contact" class="btn btn-outline">Get In Touch</a>
-              </div>
-            </div>
-            
-            <div class="hero-image-wrapper">
-              <!-- ===============================================================
-                   Profile Image Placeholder
-                   INSTRUCTION: Replace the placeholder div below with your actual profile image.
-                   Example:
-                   <img src="profile.jpg" alt="[Your Name]" class="profile-photo" width="340" height="340" />
-                   =============================================================== -->
-              <div id="profile-image-container" class="profile-placeholder-card">
-                <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-                  <circle cx="12" cy="7" r="4"></circle>
-                </svg>
-                <div class="placeholder-label">[INSERT PROFILE IMAGE HERE]</div>
-                <div class="placeholder-help">Recommended size: 400x400px (square)</div>
-              </div>
-            </div>
+          <div class="featured-banner-intro">
+            <p class="section-subtitle">Flagship Showcase</p>
+            <h1>Featured Project</h1>
+            <p class="section-description">A highlighted, deep-dive spotlight on my flagship engineering and design achievement.</p>
           </div>
+
+          <article id="featured-project-card" class="featured-project-card">
+            <!-- ===============================================================
+                 Featured Project Image Placeholder
+                 INSTRUCTION: Replace the container below with your actual project image.
+                 Example:
+                 <img src="featured-app.png" alt="[Project Title]" class="featured-img" width="600" height="400" />
+                 =============================================================== -->
+            <div id="featured-image-container" class="featured-image-container">
+              <svg class="featured-image-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+              <div class="featured-image-label">[Project image]</div>
+              <div class="featured-image-help">HTML comment above shows where to replace this placeholder with your high-res screenshot.</div>
+            </div>
+
+            <div class="featured-body">
+              <span class="featured-badge">&#9733; Spotlight Project</span>
+              <h2 id="featured-title" class="featured-title">[Project title]</h2>
+              <p id="featured-desc" class="featured-desc">[Short description]</p>
+              <div id="featured-tech" class="featured-tech">
+                <strong>Technologies used:</strong> [Technologies used]
+              </div>
+              <div class="featured-actions">
+                <a href="#" id="btn-featured-live" class="btn btn-primary">View Live App</a>
+                <a href="#" id="btn-featured-code" class="btn btn-outline">View Code</a>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
 
       <!-- =======================================================================
-           About Me, Interests & Goals Section
+           3. Projects Section (Grid of Remaining 10 Empty Project Cards)
            ======================================================================= -->
-      <section id="about" class="section section-alt">
+      <section id="projects" class="section section-alt">
         <div class="container">
           <div class="section-header">
-            <p class="section-subtitle">Get To Know Me</p>
-            <h2>About Me</h2>
-            <p class="section-description">A brief background, personal interests, and aspiring goals.</p>
-          </div>
-
-          <div class="about-grid">
-            <article id="about-main-card" class="about-main-card">
-              <h3>Background & Story</h3>
-              <p id="about-bio">[Write about yourself here]</p>
-
-              <div class="about-subgrid">
-                <div id="interests-card" class="info-card">
-                  <div class="info-card-header">
-                    <svg class="info-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                    </svg>
-                    <h3>My Interests</h3>
-                  </div>
-                  <p id="about-interests">[Your Interests]</p>
-                </div>
-
-                <div id="goals-card" class="info-card">
-                  <div class="info-card-header">
-                    <svg class="info-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                      <circle cx="12" cy="12" r="10"></circle>
-                      <circle cx="12" cy="12" r="6"></circle>
-                      <circle cx="12" cy="12" r="2"></circle>
-                    </svg>
-                    <h3>My Goals</h3>
-                  </div>
-                  <p id="about-goals">[Your Goals]</p>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- =======================================================================
-           3. Projects Section (10 Empty Cards)
-           ======================================================================= -->
-      <section id="projects" class="section">
-        <div class="container">
-          <div class="section-header">
-            <p class="section-subtitle">Portfolio Showcase</p>
-            <h2>Featured Projects</h2>
-            <p class="section-description">Browse through recent applications, experiments, and open-source contributions.</p>
+            <p class="section-subtitle">Portfolio Catalog</p>
+            <h2>More Projects</h2>
+            <p class="section-description">A collection of applications, tools, and technical experiments.</p>
           </div>
 
           <div class="projects-grid">
             <!-- Project Card 1 -->
             <article id="project-card-1" class="project-card">
-              <!-- Replace with: <img src="project-1.jpg" alt="[Project Title 1]" /> -->
+              <!-- Replace with: <img src="project-1.jpg" alt="[Project title 1]" /> -->
               <div id="project-img-1" class="project-image-container">
                 <svg class="project-image-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
                   <circle cx="8.5" cy="8.5" r="1.5"></circle>
                   <polyline points="21 15 16 10 5 21"></polyline>
                 </svg>
-                <span class="project-image-text">[Project Image 1]</span>
+                <span class="project-image-text">[Project image]</span>
               </div>
               <div class="project-body">
-                <h3 id="project-title-1" class="project-title">[Project Title 1]</h3>
+                <h3 id="project-title-1" class="project-title">[Project title]</h3>
                 <p id="project-desc-1" class="project-desc">[Short description]</p>
                 <div id="project-tech-1" class="project-tech">
-                  <strong>Technologies:</strong> [Technologies used]
+                  <strong>Technologies used:</strong> [Technologies used]
                 </div>
                 <div class="project-actions">
                   <a href="#" id="btn-live-1" class="btn btn-primary btn-sm">View Live App</a>
@@ -153,20 +117,20 @@
 
             <!-- Project Card 2 -->
             <article id="project-card-2" class="project-card">
-              <!-- Replace with: <img src="project-2.jpg" alt="[Project Title 2]" /> -->
+              <!-- Replace with: <img src="project-2.jpg" alt="[Project title 2]" /> -->
               <div id="project-img-2" class="project-image-container">
                 <svg class="project-image-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
                   <circle cx="8.5" cy="8.5" r="1.5"></circle>
                   <polyline points="21 15 16 10 5 21"></polyline>
                 </svg>
-                <span class="project-image-text">[Project Image 2]</span>
+                <span class="project-image-text">[Project image]</span>
               </div>
               <div class="project-body">
-                <h3 id="project-title-2" class="project-title">[Project Title 2]</h3>
+                <h3 id="project-title-2" class="project-title">[Project title]</h3>
                 <p id="project-desc-2" class="project-desc">[Short description]</p>
                 <div id="project-tech-2" class="project-tech">
-                  <strong>Technologies:</strong> [Technologies used]
+                  <strong>Technologies used:</strong> [Technologies used]
                 </div>
                 <div class="project-actions">
                   <a href="#" id="btn-live-2" class="btn btn-primary btn-sm">View Live App</a>
@@ -177,20 +141,20 @@
 
             <!-- Project Card 3 -->
             <article id="project-card-3" class="project-card">
-              <!-- Replace with: <img src="project-3.jpg" alt="[Project Title 3]" /> -->
+              <!-- Replace with: <img src="project-3.jpg" alt="[Project title 3]" /> -->
               <div id="project-img-3" class="project-image-container">
                 <svg class="project-image-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
                   <circle cx="8.5" cy="8.5" r="1.5"></circle>
                   <polyline points="21 15 16 10 5 21"></polyline>
                 </svg>
-                <span class="project-image-text">[Project Image 3]</span>
+                <span class="project-image-text">[Project image]</span>
               </div>
               <div class="project-body">
-                <h3 id="project-title-3" class="project-title">[Project Title 3]</h3>
+                <h3 id="project-title-3" class="project-title">[Project title]</h3>
                 <p id="project-desc-3" class="project-desc">[Short description]</p>
                 <div id="project-tech-3" class="project-tech">
-                  <strong>Technologies:</strong> [Technologies used]
+                  <strong>Technologies used:</strong> [Technologies used]
                 </div>
                 <div class="project-actions">
                   <a href="#" id="btn-live-3" class="btn btn-primary btn-sm">View Live App</a>
@@ -201,20 +165,20 @@
 
             <!-- Project Card 4 -->
             <article id="project-card-4" class="project-card">
-              <!-- Replace with: <img src="project-4.jpg" alt="[Project Title 4]" /> -->
+              <!-- Replace with: <img src="project-4.jpg" alt="[Project title 4]" /> -->
               <div id="project-img-4" class="project-image-container">
                 <svg class="project-image-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
                   <circle cx="8.5" cy="8.5" r="1.5"></circle>
                   <polyline points="21 15 16 10 5 21"></polyline>
                 </svg>
-                <span class="project-image-text">[Project Image 4]</span>
+                <span class="project-image-text">[Project image]</span>
               </div>
               <div class="project-body">
-                <h3 id="project-title-4" class="project-title">[Project Title 4]</h3>
+                <h3 id="project-title-4" class="project-title">[Project title]</h3>
                 <p id="project-desc-4" class="project-desc">[Short description]</p>
                 <div id="project-tech-4" class="project-tech">
-                  <strong>Technologies:</strong> [Technologies used]
+                  <strong>Technologies used:</strong> [Technologies used]
                 </div>
                 <div class="project-actions">
                   <a href="#" id="btn-live-4" class="btn btn-primary btn-sm">View Live App</a>
@@ -225,20 +189,20 @@
 
             <!-- Project Card 5 -->
             <article id="project-card-5" class="project-card">
-              <!-- Replace with: <img src="project-5.jpg" alt="[Project Title 5]" /> -->
+              <!-- Replace with: <img src="project-5.jpg" alt="[Project title 5]" /> -->
               <div id="project-img-5" class="project-image-container">
                 <svg class="project-image-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
                   <circle cx="8.5" cy="8.5" r="1.5"></circle>
                   <polyline points="21 15 16 10 5 21"></polyline>
                 </svg>
-                <span class="project-image-text">[Project Image 5]</span>
+                <span class="project-image-text">[Project image]</span>
               </div>
               <div class="project-body">
-                <h3 id="project-title-5" class="project-title">[Project Title 5]</h3>
+                <h3 id="project-title-5" class="project-title">[Project title]</h3>
                 <p id="project-desc-5" class="project-desc">[Short description]</p>
                 <div id="project-tech-5" class="project-tech">
-                  <strong>Technologies:</strong> [Technologies used]
+                  <strong>Technologies used:</strong> [Technologies used]
                 </div>
                 <div class="project-actions">
                   <a href="#" id="btn-live-5" class="btn btn-primary btn-sm">View Live App</a>
@@ -249,20 +213,20 @@
 
             <!-- Project Card 6 -->
             <article id="project-card-6" class="project-card">
-              <!-- Replace with: <img src="project-6.jpg" alt="[Project Title 6]" /> -->
+              <!-- Replace with: <img src="project-6.jpg" alt="[Project title 6]" /> -->
               <div id="project-img-6" class="project-image-container">
                 <svg class="project-image-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
                   <circle cx="8.5" cy="8.5" r="1.5"></circle>
                   <polyline points="21 15 16 10 5 21"></polyline>
                 </svg>
-                <span class="project-image-text">[Project Image 6]</span>
+                <span class="project-image-text">[Project image]</span>
               </div>
               <div class="project-body">
-                <h3 id="project-title-6" class="project-title">[Project Title 6]</h3>
+                <h3 id="project-title-6" class="project-title">[Project title]</h3>
                 <p id="project-desc-6" class="project-desc">[Short description]</p>
                 <div id="project-tech-6" class="project-tech">
-                  <strong>Technologies:</strong> [Technologies used]
+                  <strong>Technologies used:</strong> [Technologies used]
                 </div>
                 <div class="project-actions">
                   <a href="#" id="btn-live-6" class="btn btn-primary btn-sm">View Live App</a>
@@ -273,20 +237,20 @@
 
             <!-- Project Card 7 -->
             <article id="project-card-7" class="project-card">
-              <!-- Replace with: <img src="project-7.jpg" alt="[Project Title 7]" /> -->
+              <!-- Replace with: <img src="project-7.jpg" alt="[Project title 7]" /> -->
               <div id="project-img-7" class="project-image-container">
                 <svg class="project-image-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
                   <circle cx="8.5" cy="8.5" r="1.5"></circle>
                   <polyline points="21 15 16 10 5 21"></polyline>
                 </svg>
-                <span class="project-image-text">[Project Image 7]</span>
+                <span class="project-image-text">[Project image]</span>
               </div>
               <div class="project-body">
-                <h3 id="project-title-7" class="project-title">[Project Title 7]</h3>
+                <h3 id="project-title-7" class="project-title">[Project title]</h3>
                 <p id="project-desc-7" class="project-desc">[Short description]</p>
                 <div id="project-tech-7" class="project-tech">
-                  <strong>Technologies:</strong> [Technologies used]
+                  <strong>Technologies used:</strong> [Technologies used]
                 </div>
                 <div class="project-actions">
                   <a href="#" id="btn-live-7" class="btn btn-primary btn-sm">View Live App</a>
@@ -297,20 +261,20 @@
 
             <!-- Project Card 8 -->
             <article id="project-card-8" class="project-card">
-              <!-- Replace with: <img src="project-8.jpg" alt="[Project Title 8]" /> -->
+              <!-- Replace with: <img src="project-8.jpg" alt="[Project title 8]" /> -->
               <div id="project-img-8" class="project-image-container">
                 <svg class="project-image-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
                   <circle cx="8.5" cy="8.5" r="1.5"></circle>
                   <polyline points="21 15 16 10 5 21"></polyline>
                 </svg>
-                <span class="project-image-text">[Project Image 8]</span>
+                <span class="project-image-text">[Project image]</span>
               </div>
               <div class="project-body">
-                <h3 id="project-title-8" class="project-title">[Project Title 8]</h3>
+                <h3 id="project-title-8" class="project-title">[Project title]</h3>
                 <p id="project-desc-8" class="project-desc">[Short description]</p>
                 <div id="project-tech-8" class="project-tech">
-                  <strong>Technologies:</strong> [Technologies used]
+                  <strong>Technologies used:</strong> [Technologies used]
                 </div>
                 <div class="project-actions">
                   <a href="#" id="btn-live-8" class="btn btn-primary btn-sm">View Live App</a>
@@ -321,20 +285,20 @@
 
             <!-- Project Card 9 -->
             <article id="project-card-9" class="project-card">
-              <!-- Replace with: <img src="project-9.jpg" alt="[Project Title 9]" /> -->
+              <!-- Replace with: <img src="project-9.jpg" alt="[Project title 9]" /> -->
               <div id="project-img-9" class="project-image-container">
                 <svg class="project-image-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
                   <circle cx="8.5" cy="8.5" r="1.5"></circle>
                   <polyline points="21 15 16 10 5 21"></polyline>
                 </svg>
-                <span class="project-image-text">[Project Image 9]</span>
+                <span class="project-image-text">[Project image]</span>
               </div>
               <div class="project-body">
-                <h3 id="project-title-9" class="project-title">[Project Title 9]</h3>
+                <h3 id="project-title-9" class="project-title">[Project title]</h3>
                 <p id="project-desc-9" class="project-desc">[Short description]</p>
                 <div id="project-tech-9" class="project-tech">
-                  <strong>Technologies:</strong> [Technologies used]
+                  <strong>Technologies used:</strong> [Technologies used]
                 </div>
                 <div class="project-actions">
                   <a href="#" id="btn-live-9" class="btn btn-primary btn-sm">View Live App</a>
@@ -345,20 +309,20 @@
 
             <!-- Project Card 10 -->
             <article id="project-card-10" class="project-card">
-              <!-- Replace with: <img src="project-10.jpg" alt="[Project Title 10]" /> -->
+              <!-- Replace with: <img src="project-10.jpg" alt="[Project title 10]" /> -->
               <div id="project-img-10" class="project-image-container">
                 <svg class="project-image-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
                   <circle cx="8.5" cy="8.5" r="1.5"></circle>
                   <polyline points="21 15 16 10 5 21"></polyline>
                 </svg>
-                <span class="project-image-text">[Project Image 10]</span>
+                <span class="project-image-text">[Project image]</span>
               </div>
               <div class="project-body">
-                <h3 id="project-title-10" class="project-title">[Project Title 10]</h3>
+                <h3 id="project-title-10" class="project-title">[Project title]</h3>
                 <p id="project-desc-10" class="project-desc">[Short description]</p>
                 <div id="project-tech-10" class="project-tech">
-                  <strong>Technologies:</strong> [Technologies used]
+                  <strong>Technologies used:</strong> [Technologies used]
                 </div>
                 <div class="project-actions">
                   <a href="#" id="btn-live-10" class="btn btn-primary btn-sm">View Live App</a>
@@ -371,14 +335,77 @@
       </section>
 
       <!-- =======================================================================
-           4. Skills Section (10 Skill Tags)
+           4. About / Minimal Bio (Placed After Projects)
+           ======================================================================= -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-subtitle">Biography</p>
+            <h2>About Me</h2>
+            <p class="section-description">A minimal overview of my background, interests, and future goals.</p>
+          </div>
+
+          <div class="about-minimal-grid">
+            <div class="about-image-column">
+              <!-- ===============================================================
+                   Profile Image Placeholder
+                   INSTRUCTION: Replace the placeholder div below with your actual profile image.
+                   Example:
+                   <img src="profile.jpg" alt="[Your Name]" class="profile-photo" width="320" height="320" />
+                   =============================================================== -->
+              <div id="profile-image-container" class="profile-placeholder-card">
+                <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+                <div class="placeholder-label">[INSERT PROFILE IMAGE HERE]</div>
+                <div class="placeholder-help">Recommended size: 400x400px (square)</div>
+              </div>
+            </div>
+
+            <div class="about-content-column">
+              <article id="about-bio-card" class="about-bio-card">
+                <p id="about-intro-line" class="about-bio-intro">[Your Short Introduction]</p>
+                <p id="about-bio">[Write about yourself here]</p>
+
+                <div class="about-subgrid">
+                  <div id="interests-card" class="info-card">
+                    <div class="info-card-header">
+                      <svg class="info-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                      </svg>
+                      <h3>My Interests</h3>
+                    </div>
+                    <p id="about-interests">[Your Interests]</p>
+                  </div>
+
+                  <div id="goals-card" class="info-card">
+                    <div class="info-card-header">
+                      <svg class="info-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <circle cx="12" cy="12" r="6"></circle>
+                        <circle cx="12" cy="12" r="2"></circle>
+                      </svg>
+                      <h3>My Goals</h3>
+                    </div>
+                    <p id="about-goals">[Your Goals]</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =======================================================================
+           5. Skills Section (Simple List or Grid of 10 Skill Tags)
            ======================================================================= -->
       <section id="skills" class="section section-alt">
         <div class="container">
           <div class="section-header">
-            <p class="section-subtitle">Core Proficiencies</p>
+            <p class="section-subtitle">Technical Toolkit</p>
             <h2>My Skills</h2>
-            <p class="section-description">A highlighted snapshot of technical expertise, tools, and design capabilities.</p>
+            <p class="section-description">A curated inventory of core technologies, tools, and design capabilities.</p>
           </div>
 
           <div class="skills-grid">
@@ -427,14 +454,14 @@
       </section>
 
       <!-- =======================================================================
-           5. Fun Facts & Creative Page Section
+           6. Fun Facts & Creative Page About Me Section
            ======================================================================= -->
       <section id="fun-facts" class="section">
         <div class="container">
           <div class="section-header">
-            <p class="section-subtitle">Beyond The Code</p>
-            <h2>Fun & Creative Side</h2>
-            <p class="section-description">A playful peek into my personality, hobbies, favorites, and media gallery.</p>
+            <p class="section-subtitle">Personality &amp; Passions</p>
+            <h2>Fun &amp; Creative Side</h2>
+            <p class="section-description">A playful peek into my hobbies, favorites, and creative media showcase.</p>
           </div>
 
           <div class="fun-facts-container">
@@ -504,7 +531,7 @@
                     <polyline points="21 15 16 10 5 21"></polyline>
                   </svg>
                   <div class="placeholder-label">[INSERT IMAGE HERE]</div>
-                  <div class="placeholder-help">HTML comment above shows where to add your own personal image.</div>
+                  <div class="placeholder-help">HTML comment above explains where to add your own personal image.</div>
                 </div>
 
                 <!-- ===========================================================
@@ -524,7 +551,7 @@
                     <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
                   </svg>
                   <div class="placeholder-label">[INSERT VIDEO HERE]</div>
-                  <div class="placeholder-help">HTML comment above shows where to add your own video or embed.</div>
+                  <div class="placeholder-help">HTML comment above explains where to add your own video or embed.</div>
                 </div>
               </div>
             </div>
@@ -533,7 +560,7 @@
       </section>
 
       <!-- =======================================================================
-           6. Contact Section
+           7. Contact Section
            ======================================================================= -->
       <section id="contact" class="section section-alt">
         <div class="container">
@@ -577,9 +604,9 @@
     <footer id="site-footer">
       <div class="container">
         <ul class="footer-nav">
-          <li><a href="#home" class="footer-link">Home</a></li>
-          <li><a href="#about" class="footer-link">About</a></li>
+          <li><a href="#featured" class="footer-link">Featured</a></li>
           <li><a href="#projects" class="footer-link">Projects</a></li>
+          <li><a href="#about" class="footer-link">About</a></li>
           <li><a href="#skills" class="footer-link">Skills</a></li>
           <li><a href="#fun-facts" class="footer-link">Fun Facts</a></li>
           <li><a href="#contact" class="footer-link">Contact</a></li>
